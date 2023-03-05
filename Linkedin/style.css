@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+}
+* p {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgba(222, 222, 222, 0.32);
+}
+
+header {
+  background-color: #fff;
+  padding: 0.5em 0em;
+}
+header #header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 1200px;
+  margin: auto;
+}
+header #header .logo {
+  height: 24px;
+  margin-right: 1.25em;
+}
+header #header .search-input {
+  box-sizing: border-box;
+  position: relative;
+}
+header #header .search-input input {
+  background: rgba(222, 222, 222, 0.32);
+  border-radius: 4px;
+  border-style: none;
+  padding: 0.5em 2em;
+}
+header #header .search-input img {
+  position: absolute;
+  left: 0.35em;
+  top: 0.5em;
+}
+header #header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 340px;
+  margin: 0px 100px;
+}
+header #header .nav-bar .home-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #header .nav-bar .home-icon img {
+  margin-right: 0.5em;
+}
+header #header .nav-bar .home-icon p {
+  padding-top: 0.5em;
+  color: #006699;
+  font-size: 14px;
+  font-weight: 500;
+}
+header #header .user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #header .user-profile .user-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.25em;
+}
+header #header .user-profile .user-name p {
+  font-size: 12px;
+  margin: 0px 0.75em;
+}
+header #header .user-profile .user-name p:nth-child(2) {
+  color: #31B057;
+}
+header #header .user-profile img {
+  width: 28px;
+  height: 28px;
+}
+header #header .user-profile img.user-profile-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 0.25em;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 1em auto;
+}
+#main .layout-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main .layout-sidebar .identity-module {
+  width: 270px;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+#main .layout-sidebar .identity-module .user-profile {
+  position: relative;
+}
+#main .layout-sidebar .identity-module .user-profile img.pp {
+  position: absolute;
+  width: 55px;
+  left: 100px;
+  top: 15px;
+}
+#main .layout-sidebar .identity-module .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  padding: 0em 0.5em 0.5em 0.5em;
+  border-bottom: 1px solid #AAAAAA;
+}
+#main .layout-sidebar .identity-module .user-info p {
+  margin: 0px;
+}
+#main .layout-sidebar .identity-module .user-info span {
+  font-size: 14px;
+  color: #AAAAAA;
+}
+#main .layout-sidebar .identity-module .text-info {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  padding: 0em 0.5em;
+}
+#main .layout-sidebar .identity-module .text-info .text-align {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+#main .layout-sidebar .identity-module .text-info .text-align span {
+  color: #006699;
+  font-weight: 600;
+}
+#main .layout-sidebar .group-box {
+  width: 270px;
+  background: #fff;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+#main .layout-sidebar .group-box .box1 {
+  display: flex;
+  flex-direction: column;
+}
+#main .layout-sidebar .group-box .box1 .topTitle {
+  border-bottom: 1px solid #AAAAAA;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+#main .layout-sidebar .group-box .box1 .topTitle span {
+  font-weight: 600;
+  font-size: 14px;
+}
+#main .layout-sidebar .group-box .box1 .boxHashtag {
+  display: flex;
+  flex-direction: column;
+}
+#main .layout-sidebar .group-box .box1 .boxHashtag span {
+  color: #006699;
+  font-size: 12px;
+  margin-bottom: 0.5em;
+}
+#main .layout-sidebar .group-box .box2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+#main .layout-sidebar .group-box .box2 .bottomTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #AAAAAA;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+#main .layout-sidebar .group-box .box2 .bottomTitle .bottomName {
+  font-size: 14px;
+  font-weight: 600;
+}
+#main .layout-sidebar .group-box .box2 .bottomTitle .boxActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .layout-sidebar .group-box .box2 .bottomTitle .boxActive span {
+  font-size: 14px;
+  color: #31B057;
+}
+#main .layout-sidebar .group-box .box2 .boxHashtag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .layout-sidebar .group-box .box2 .boxHashtag .littleHashtag span {
+  font-size: 12px;
+  color: #006699;
+  margin: 0px;
+}
+#main .boxEvent {
+  background-color: #fff;
+  margin-top: 1em;
+  width: 270px;
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main .boxEvent p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #17272F;
+}
+#main .scaffoldScrollContent {
+  display: flex;
+  flex-direction: column;
+}
+#main .scaffoldScrollContent .boxShareEntry {
+  width: 600px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1.5em 1em 1.5em;
+  border-radius: 0.5em;
+}
+#main .scaffoldScrollContent .boxShareEntry .contentBox {
+  border-bottom: 1px solid #AAAAAA;
+  margin-bottom: 1em;
+}
+#main .scaffoldScrollContent .boxShareEntry .contentBox p {
+  color: #AAAAAA;
+  font-size: 14px;
+  margin-bottom: 1.5em;
+}
+#main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .photoNav, #main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .videoNav, #main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .eventNav, #main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .writeNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .photoNav p, #main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .videoNav p, #main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .eventNav p, #main .scaffoldScrollContent .boxShareEntry .shareBoxNavBar .writeNav p {
+  font-size: 14px;
+  margin-left: 0.5em;
+}
+#main .scaffoldScrollContent .boxFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #DEDEDE;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  padding: 0.75em;
+}
+#main .scaffoldScrollContent .boxFilter p {
+  font-size: 14px;
+  color: #17272F;
+}
+#main .scaffoldScrollContent .boxFilter .boxChose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .scaffoldScrollContent .boxFilter .boxChose span {
+  color: #17272F;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+#main .scaffoldScrollContent .memberPost {
+  background-color: #fff;
+  width: 600px;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  padding: 0.75em;
+  display: flex;
+  flex-direction: column;
+}
+#main .scaffoldScrollContent .memberPost .cardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #AAAAAA;
+  padding-bottom: 0.5em;
+}
+#main .scaffoldScrollContent .memberPost .cardTitle .userProfile {
+  display: flex;
+  align-items: center;
+}
+#main .scaffoldScrollContent .memberPost .cardTitle .userProfile img {
+  width: 32px;
+}
+#main .scaffoldScrollContent .memberPost .cardTitle .userProfile .userInfo {
+  margin-left: 0.5em;
+}
+#main .scaffoldScrollContent .memberPost .cardTitle .userProfile .userInfo .userName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #17272F;
+}
+#main .scaffoldScrollContent .memberPost .cardTitle .userProfile .userInfo p {
+  font-size: 10px;
+  color: #AAAAAA;
+}
+#main .scaffoldScrollContent .memberPost .cardContent {
+  margin-top: 0.75em;
+}
+#main .scaffoldScrollContent .memberPost .cardContent p {
+  font-size: 14px;
+  color: #17272F;
+  margin-bottom: 1em;
+}
+#main .scaffoldScrollContent .memberPost .cardContent .cardHashtag p {
+  font-size: 14px;
+  color: #006699;
+  font-weight: 600;
+}
+#main .scaffoldScrollContent .memberPost .cardContent img {
+  margin-left: 4em;
+}
+#main .scaffoldScrollContent .memberPost .cardAction {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+#main .scaffoldScrollContent .memberPost .cardAction img {
+  margin-right: 0.5em;
+}
+#main .scaffoldScrollContent .memberPost .cardAction .likeNumber {
+  padding: 0px;
+}
+#main .scaffoldScrollContent .memberPost .cardAction .likeNumber span {
+  font-size: 12px;
+  color: #17272F;
+}
+#main .scaffoldScrollContent .memberPost .socialAction {
+  display: flex;
+  border-top: 1px solid #AAAAAA;
+  padding-top: 0.75em;
+}
+#main .scaffoldScrollContent .memberPost .socialAction .like, #main .scaffoldScrollContent .memberPost .socialAction .comment, #main .scaffoldScrollContent .memberPost .socialAction .share, #main .scaffoldScrollContent .memberPost .socialAction .send {
+  margin-right: 0.75em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main .scaffoldScrollContent .memberPost .socialAction .like span, #main .scaffoldScrollContent .memberPost .socialAction .comment span, #main .scaffoldScrollContent .memberPost .socialAction .share span, #main .scaffoldScrollContent .memberPost .socialAction .send span {
+  font-size: 14px;
+  color: #AAAAAA;
+  margin-left: 0.5em;
+}
+#main .scaffoldScrollContent .memberPost .commenBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+#main .scaffoldScrollContent .memberPost .commenBox img {
+  width: 32px;
+}
+#main .scaffoldScrollContent .memberPost .commenBox input {
+  width: 530px;
+  height: 40px;
+  padding-left: 0.75em;
+  border: 1px solid #EDF0F5;
+}
+#main .moduleFollows {
+  width: 270px;
+  background-color: #fff;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.75em 0.75em 0.75em;
+  max-height: 250px;
+}
+#main .moduleFollows .followsTitle {
+  border-bottom: 1px solid #AAAAAA;
+}
+#main .moduleFollows .followsTitle p {
+  font-size: 14px;
+  color: #17272F;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+#main .moduleFollows .memberFollow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75em;
+}
+#main .moduleFollows .memberFollow .userInfo {
+  display: flex;
+  align-items: center;
+}
+#main .moduleFollows .memberFollow .userInfo img {
+  margin-right: 0.75em;
+}
+#main .moduleFollows .memberFollow .userInfo .memberName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main .moduleFollows .memberFollow .userInfo .memberName p {
+  font-size: 14px;
+  color: #17272F;
+  font-weight: 600;
+}
+#main .moduleFollows .memberFollow .userInfo .memberName span {
+  font-size: 12px;
+  color: #AAAAAA;
+}
+#main .moduleFollows .anotherBox {
+  margin: auto;
+}
+#main .moduleFollows .anotherBox p {
+  color: #006699;
+  font-size: 14px;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

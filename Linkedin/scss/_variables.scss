@@ -1,0 +1,21 @@
+$f-color-b : #006699;
+$f-color-g : #31B057; 
+
+
+
+
+
+
+// Mixin 
+
+@mixin f-c-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin f-c-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
